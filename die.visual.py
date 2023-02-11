@@ -14,14 +14,14 @@ for roll_num in range(1000):
     results.append(result)
 
 # Analyze the results.
-frequecies = []
+frequencies = []
 for value in range(1, die.num_sides+1):
     frequency = results.count(value)
-    frequecies.append(frequency)
+    frequencies.append(frequency)
 
 # Visualize the results.
 x_values = list(range(1, die.num_sides+1))
-data = [Bar(x=x_values, y=frequecies)]
+data = [Bar(x=x_values, y=frequencies)]
 
 x_axis_config = {'title': 'Result'}
 y_axis_config = {'title': 'Frequency of Result'}
